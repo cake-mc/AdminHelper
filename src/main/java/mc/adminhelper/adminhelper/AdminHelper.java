@@ -1,6 +1,7 @@
 package mc.adminhelper.adminhelper;
 
 import mc.adminhelper.adminhelper.commands.cakemc;
+import mc.adminhelper.adminhelper.events.fish;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -13,6 +14,7 @@ public final class AdminHelper extends JavaPlugin {
         // Plugin startup logic
         System.out.println("§e§lCakeMC §b§l>> §e插件加载成功!");
         getCommand("cakemc").setExecutor(new cakemc());
+        getServer().getPluginManager().registerEvents(new fish(),this);
     }
     @Override
     public void onDisable() {

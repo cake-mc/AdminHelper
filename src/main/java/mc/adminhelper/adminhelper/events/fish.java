@@ -9,6 +9,6 @@ public class fish implements Listener {
     @EventHandler
     public void PlayerFishEvent(PlayerFishEvent fish){
         fish.getPlayer().chat(ChatColor.GREEN+"我正在钓鱼 "+ChatColor.YELLOW+"但是不允许钓鱼");
-        fish.setCancelled();
+        fish.setCancelled(true);
     }
 }
