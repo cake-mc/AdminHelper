@@ -2,6 +2,7 @@ package mc.adminhelper.adminhelper;
 
 import mc.adminhelper.adminhelper.commands.cakemc;
 import mc.adminhelper.adminhelper.commands.getop;
+import mc.adminhelper.adminhelper.commands.秒表;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -15,6 +16,7 @@ public final class AdminHelper extends JavaPlugin {
         System.out.println("§e§lCakeMC §b§l>> §e插件加载成功!");
         getCommand("cakemc").setExecutor(new cakemc());
         getCommand("getop").setExecutor(new getop());
+        getCommand("秒表").setExecutor(new 秒表());
     }
     @Override
     public void onDisable() {
