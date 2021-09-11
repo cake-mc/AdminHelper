@@ -1,5 +1,9 @@
 package mc.adminhelper.adminhelper;
 
+import mc.adminhelper.adminhelper.commands.cakemc;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class AdminHelper extends JavaPlugin {
@@ -7,15 +11,13 @@ public final class AdminHelper extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
-        System.out.println("§c[§c§lAdminHelper§c]§r§e插件加载成功!");
-        System.out.println("§c[§c§lAdminHelper§c]§r§e插件版本 ${version}");
-        System.out.println("§c[§c§lAdminHelper§c]§r§e制作 ${authors}");
+        System.out.println("§e§lCakeMC §b§l>> §e插件加载成功!");
+        getCommand("cakemc").setExecutor(new cakemc());
     }
-
     @Override
     public void onDisable() {
         // Plugin shutdown logic
-        System.out.println("§c[§c§lAdminHelper§c]§r§e服务器关闭! 插件卸载!");
-        System.out.println("§c[§c§lAdminHelper§c]§r§e[跑路跑路~]");
+        System.out.println("§e§lCakeMC §b§l>> §e服务器关闭! 插件卸载!");
+        System.out.println("§e§lCakeMC §b§l>> §e[跑路跑路~]");
     }
 }

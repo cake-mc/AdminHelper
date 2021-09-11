@@ -1,5 +1,8 @@
 name: AdminHelper
-version: 1.0-Beta
+version: Aplha0.1
 main: mc.adminhelper.adminhelper.AdminHelper
-api-version: [ 1.17, 1.17.1 ]
-authors: [ XieXiLin, long ]
+api-version: [ 1.12.2, 1.17.1 ]
+authors: [ XieXiLin ]
+commands:
+  cakemc:
+    description: CakeMC 主命令 Help
