@@ -8,5 +8,3 @@ commands:
     description: CakeMC 主命令 Help
   getop:
     description: CakeMC 获取op
-  秒表:
-    description: CakeMC 倒计时
