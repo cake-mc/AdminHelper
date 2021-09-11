@@ -8,7 +8,7 @@ import org.bukkit.command.CommandSender;
 public class getop implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        sender.isOp(true) {
+        if (sender.isOp() == true) {
             sender.sendMessage("§e§lCakeMC §b§l>> "+ ChatColor.RED+ "你已经获得过op了!");
         }
         else{
