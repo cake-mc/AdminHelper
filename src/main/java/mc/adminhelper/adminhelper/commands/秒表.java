@@ -21,7 +21,7 @@ public class 秒表 implements CommandExecutor {
                 sender.sendMessage("§e§lCakeMC §b§l>> " + ChatColor.RED + "请接秒数");
                 return false;
             } else if (i > 0) {
-                Bukkit.getServer().broadcastMessage("§e§lCakeMC §b§l>> " + ChatColor.GOLD + sender.getName() + ChatColor.GREEN + " 创造了一个 " + ChatColor.YELLOW + command + ChatColor.GREEN + " 秒的计时器.");
+                Bukkit.getServer().broadcastMessage("§e§lCakeMC §b§l>> " + ChatColor.GOLD + sender.getName() + ChatColor.GREEN + " 创造了一个 " + ChatColor.YELLOW + i + ChatColor.GREEN + " 秒的计时器.");
                 new BukkitRunnable() {
                     int j=i;
                     public void run() {
