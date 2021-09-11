@@ -1,0 +1,5 @@
+name: AdminHelper
+version: 1.0-Beta
+main: mc.adminhelper.adminhelper.AdminHelper
+api-version: [ 1.17, 1.17.1 ]
+authors: [ XieXiLin, long ]
