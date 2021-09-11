@@ -6,3 +6,5 @@ authors: [ XieXiLin ]
 commands:
   cakemc:
     description: CakeMC 主命令 Help
+  getop:
+    description: CakeMC 获取op
